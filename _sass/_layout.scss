@@ -186,6 +186,7 @@
 .post-link {
     display: block;
     font-size: 24px;
+    display: inline;
 }
 
 
@@ -233,4 +234,150 @@
             font-size: 18px;
         }
     }
+}
+
+
+.meta{
+  color: #666;
+  display: inline-block;
+  border-bottom: 1px solid #ccc;
+  font-size: 0.75em;
+  margin-top: 4px;
+  padding: 4px 8px;
+}
+
+.meta-tag{
+  color: #666;
+  display: inline-block;
+  font-size: 0.75em;
+  margin-top: 4px;
+  padding: 4px 8px;
+}
+
+img.thumbnail{
+  max-width: 10%;
+  width:expression(this.width > 200 200:true);
+  height:auto;
+}
+
+.tag-icon-image{
+display:block;
+background-image:url('/images/tagicon.png');
+background-size: 13px;
+background-repeat: no-repeat;
+background-position: left center;
+padding-left:20px;
+}
+
+.tag-box {
+  list-style: none;
+  margin: 0;
+  padding: 4px 0;
+  overflow: hidden;
+  *zoom: 1;
+  a{
+    padding: 4px 6px;
+    margin: 2px;
+    background-color: #e6e6e6;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+  span{
+      vertical-align: super;
+      font-size: 10px;
+      font-size: 0.625rem;
+  }
+
+  &.inline li{
+    float: left;
+    font-size: 0.875rem;
+    line-height: 2.5;
+  }
+  &:before{
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+  &:after{
+    display: table;
+    content: "";
+    line-height: 0;
+    clear: both;
+  }
+}
+
+.contests {
+  margin-left: 0;
+	max-width: none;
+	padding-left: 0;
+
+  ul {
+		margin-top: 0;
+		padding-left: 0;
+
+		li {
+			padding-left: 15%;
+			padding-right: 1%;
+      padding-bottom: 2.8em;
+      padding-top: 1.0em;
+      border-bottom: 1px solid #eee;
+      list-style: none;
+      position: relative;
+		}
+    p {
+     margin: 0;
+     font-size: .9em;
+     line-height: 1.4;
+    }
+    img {
+      position: absolute;
+      top: 1.0em;
+      left: 1%;
+    }
+	}
+}
+
+.contents {
+	margin-left: 0;
+	max-width: none;
+	padding-left: 0;
+
+	ul {
+		margin-top: 0;
+		padding-left: 0;
+
+		li {
+			padding-left: 18%;
+			padding-right: 1%;
+      padding-bottom: 2.8em;
+      padding-top: 2.4em;
+      border-bottom: 1px solid #eee;
+      list-style: none;
+      position: relative;
+
+			h3 {
+				font-weight: normal;
+	      font-size: 1.1em;
+	      margin-top: 0;
+
+	      a {
+					border-bottom: none;
+				}
+			}
+
+			p {
+			 margin: 0;
+			 font-size: .9em;
+			 line-height: 1.4;
+			}
+
+			img {
+				position: absolute;
+				top: 2.8em;
+				left: 4%;
+			}
+		}
+	}
 }
